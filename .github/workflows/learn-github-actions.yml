@@ -11,3 +11,8 @@ jobs:
           node-version: '20'
       - run: npm install -g bats
       - run: bats -v
+  my-second-job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Now running the second job!"
+      - run: echo "Job complete!"
